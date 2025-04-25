@@ -30,7 +30,7 @@ PREDICTION_THRESHOLD = 0.5 # Threshold for classifying probability
 @st.cache_resource
 def load_classifier_model():
     # IMPORTANT: Use raw string literal or double backslashes for Windows paths
-    model_path = r"C:\Users\bhadr\Level0\btp\app\models\vgg19_chatter_multi_input_model.keras"
+    model_path = r"C:\Users\Ansh\OneDrive - Indian Institute of Technology Guwahati\Documents\btp\app\models\vgg19_chatter_multi_input_model.keras"
     # Or: model_path = "C:\\Users\\bhadr\\Level0\\btp\\app\\models\\vgg19_chatter_multi_input_model.keras"
     if not os.path.exists(model_path):
         st.error(f"Model file not found at: {model_path}")
